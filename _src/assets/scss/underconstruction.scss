@@ -1,0 +1,56 @@
+.page_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image_logo {
+  width: 500px;
+  height: 500px;
+}
+
+.section_rrss {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0;
+  margin: -20px 0 10px;
+}
+
+.rrss__instagram,
+.rrss__facebook,
+.rrss__twitter,
+.rrss__mail {
+  width: 30px;
+  padding: 0 25px;
+}
+
+.rrss__instagram {
+  padding-left: 0;
+}
+
+.rrss__mail {
+  padding-top: 5px;
+}
+
+.form__link {
+  margin-left: -2px;
+}
+
+.form__link,
+.mail__link {
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 20px 0 5px;
+  color: black;
+  opacity: 0.75;
+  cursor: pointer;
+}
+
+.mail__link {
+  margin-top: 5px;
+  padding-bottom: 40px;
+}
