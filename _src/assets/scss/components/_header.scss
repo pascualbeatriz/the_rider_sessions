@@ -1,0 +1,60 @@
+// HEADER
+
+.header {
+  position: fixed;
+  width: 100vw;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: white;
+  font-weight: 500;
+}
+
+.logo__the_rider_sessions {
+  width: 20%;
+  cursor: pointer;
+}
+
+.header-nav__container {
+  background-color: rgba(48, 59, 163, 0.9);
+  opacity: 0.9;
+  padding: 22px 0 0;
+  height: 19px;
+  display: flex;
+  justify-content: center;
+  // ESTO ES PROVISIONAL, PARA QUE QUEDE EL NAV EN EL CENTRO
+  // width: 38%;
+  // margin: 0 auto;
+}
+
+.header-nav-ul {
+  transition: transform ease 0.8s;
+  margin: 0 auto;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+}
+
+.header-nav-li {
+  border-right: solid 1.5px orange;
+  // height: 30px;
+  margin-bottom: 21px;
+  padding: 10px 0; //Mirar esto
+  // background-color: rgba(48, 59, 163, 0.9);
+}
+
+.header-nav-li:last-child {
+  margin-right: 0;
+  border-right: none;
+}
+
+.header-nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  padding: 0 20px;
+}
