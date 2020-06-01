@@ -1,0 +1,91 @@
+// COLABORADORES
+.biography__collaborators-container {
+  background-color: burlywood;
+  padding: 30px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.biography__collaborators-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.biography__collaborators {
+  background-color: sandybrown;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.biography__collaborators-image-container {
+  border-radius: 20px;
+  background-color: purple;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 30px;
+  overflow: hidden;
+}
+
+.collaborator_img {
+  width: 100%;
+}
+
+// RAQUEL DIAZ
+.collaborator3 .collaborator_img {
+  width: 192%;
+  margin: -4px -29%;
+}
+
+// ADRIAN MARTINEZ
+.collaborator4 .collaborator_img {
+  width: 152%;
+  margin: -4px -40%;
+}
+
+// JAQUELINE TUROLLA
+.collaborator5 .collaborator_img {
+  width: 100%;
+  margin: -48px 0;
+}
+
+// ALEX PINEIRO
+.collaborator7 .collaborator_img {
+  width: 164%;
+  margin: -18px -30%;
+}
+
+.biography__collaborators-text-container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.biography__collaborators-title {
+  border-bottom: 1px solid black;
+  margin: 20px auto 10px;
+  padding-bottom: 7px;
+  font-weight: 500;
+  font-size: 22px;
+  max-width: 200px;
+}
+
+.biography__collaborators-text {
+  padding-top: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 15px;
+  color: #212121;
+}
+
+// ul
+.biography__collaborators-social-networks-list {
+  margin: 25px 20px 20px;
+  padding: 0;
+  list-style: none;
+  color: #303ba3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

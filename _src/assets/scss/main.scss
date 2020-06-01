@@ -5,6 +5,10 @@
 // @import "components/main";
 // @import "components/links";
 // @import "components/footer";
+
+@import "components/section_biography/collaborators.scss";
+@import "components/section_biography/organizers.scss";
+@import "components/section_sessions/sessions-video.scss";
 @import "components/header.scss";
 @import "components/hero.scss";
 @import "components/about.scss";
@@ -34,7 +38,8 @@
 }
 
 .main,
-.main__biography {
+.main__biography,
+.main_form {
   margin-top: 158px;
   // background-color: green;
   padding: 10px 0 0;
@@ -46,42 +51,58 @@
   padding: 0;
 }
 
-// VIDEOS
-
-.videos__section {
-  margin: 0;
-  padding: 20px 0 40px;
+.main__biography {
+  background-color: pink;
 }
 
-.videos__container {
-  box-sizing: border-box;
-  padding: 0;
-  list-style: none;
+.main_form {
+  background-color: yellow;
 }
 
-.videos__session {
-  margin: 40px auto 0;
-  padding: 0;
-  text-align: center;
-}
-
-.video__title {
-  border-top: 1px solid black;
-  margin: 20px auto 10px;
-  padding-top: 7px;
+// CONTACT FORM
+.contact__title {
+  margin: 20px 0 30px;
   font-weight: 500;
   font-size: 20px;
-  max-width: 304px;
-  text-align: left;
 }
 
-.link__video-documentation {
-  text-decoration: none;
-  color: rgb(108, 108, 108);
+.contact__text {
+  font-weight: 400;
+  line-height: 23px;
+  font-size: 17px;
   text-align: left;
-  margin-left: -55px;
-}
-
-.biography__section {
+  color: #212121;
   background-color: red;
+  margin: 20px 0;
+}
+
+.contact__form-container {
+  background-color: blueviolet;
+  margin: 20px auto;
+  padding: 0px 40px 20px;
+}
+
+.contact__name,
+.contact__mailtelf-mail,
+.contact__mailtelf-telf,
+.contact__mensaje,
+.contact__button-container {
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  padding-bottom: 5px;
+}
+
+input {
+  height: 20px;
+}
+
+.contact__button {
+  width: 100px;
+  height: 30px;
+  border-radius: 20px;
+  margin: 0 auto;
 }

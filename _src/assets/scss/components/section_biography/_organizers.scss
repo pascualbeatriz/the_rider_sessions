@@ -1,0 +1,99 @@
+// ORGANIZADORES
+.biography__organizers-container {
+  background-color: yellowgreen;
+  padding: 30px;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+}
+
+.biography__organizers-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.biography__organizers {
+  background-color: sandybrown;
+  padding: 10px;
+  margin: 30px 0;
+}
+
+.biography__organizers-image-container {
+  border-radius: 100%;
+  width: 150px;
+  height: 150px;
+  margin: 20px auto 30px;
+  overflow: hidden;
+  // background-position: center;
+}
+
+.organizer_img {
+  width: 100%;
+}
+
+.adrian_organizer .organizer_img {
+  width: 157%;
+  margin: -19px -24%;
+}
+
+.cristina_organizer .organizer_img {
+  width: 184%;
+  margin: -5px -47%;
+}
+
+.biography__organizers-text-container {
+  text-align: center;
+  padding: 0 50px;
+}
+
+.biography__organizers-title {
+  border-bottom: 1px solid black;
+  margin: 20px auto 10px;
+  padding-bottom: 7px;
+  font-weight: 500;
+  font-size: 22px;
+  max-width: 200px;
+}
+
+.biography__organizers-text {
+  padding-top: 15px;
+  font-weight: 400;
+  line-height: 21px;
+  font-size: 15px;
+  color: #212121;
+}
+
+// ul
+.biography__organizers-social-networks-list {
+  margin: 25px 20px 20px;
+  padding: 0;
+  list-style: none;
+  color: #303ba3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconos {
+  font-family: "Font Awesome 5 Brands";
+  font-size: 20px;
+  color: #303ba3;
+  padding: 8px;
+  margin-left: 20px;
+
+  // transition: background-color 0.1s;
+  &:hover {
+    color: orange;
+    background-color: #303ba3;
+    border-radius: 100%;
+  }
+}
+
+.linkedin {
+  margin-left: 0;
+  &:hover {
+    padding: 8px 9.2px;
+  }
+}

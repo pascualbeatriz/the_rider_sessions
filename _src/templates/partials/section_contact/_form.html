@@ -1,0 +1,49 @@
+<section class="contact__section">
+  <div class="central-container">
+
+  <aside class="contact__container">
+    <h2 class="contact__title">Contacto</h2>
+    <div class="contact__text-container">
+      <p class="contact__text">¿Quieres saber más? ¿Ponerte en contacto con nosotras? Rellena este formulario y estaremos encantadas de conocerte.
+      </p>
+      <small class="contact__small">Todos los campos marcados con <span class="form__asterisc">*</span> son obligatorios.</small>
+    </div>
+  </aside>
+
+  <section class="contact__form-container">
+    <form action="https://formspree.io/info.ridersessions@gmail.com" method="POST"/>
+      <div class="contact__name">
+        <label for="name">Nombre completo <span class="form__asterisc">*</span></label>
+        <input placeholder="Nombre..." class="contact__input-name" type="text" name="name" id="name" required>
+      </div>
+
+      <div class="contact__mailtelf">
+
+        <div class="contact__mailtelf-mail">
+          <label for="email">Email <span class="form__asterisc">*</span>
+          </label>
+          <input value="nombre.apellidos@mail.com"  class="contact___input-mail" type="email" name="email" id="email" required>
+        </div>
+        <div class="contact__mailtelf-telf">
+          <label for="telephone">Teléfono</label>
+          <input placeholder="Ej: 123456789" class="input-telf" type="number" name="telephone" id="telephone">
+        </div>
+
+      </div>
+
+      <div class="contact__mensaje">
+        <label for="mensaje">Mensaje <span class="form__asterisc">*</span>
+        </label>
+        <textarea placeholder="¿Qué necesitas?"  class="input-mensaje" type="text" name="mensaje" id="mensaje" rows="8" cols="20"
+          required>
+        </textarea>
+      </div>
+
+      <div class="contact__button-container">
+          <button class="contact__button">Enviar</button>
+      </div>
+    </form>
+  </section>
+
+  </div>
+</section>
