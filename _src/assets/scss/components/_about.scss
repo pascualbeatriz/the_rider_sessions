@@ -17,13 +17,27 @@
 .about__title {
   margin: 20px 0 30px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 16px;
+}
+
+@media all and (min-width: 767px) {
+  .about__title {
+    font-size: 20px;
+  }
 }
 
 .about__text {
   font-weight: 400;
-  line-height: 23px;
-  font-size: 17px;
+  line-height: 22px;
+  font-size: 13px;
   text-align: left;
   color: rgb(33, 33, 33);
+}
+
+@media all and (min-width: 767px) {
+  .about__text {
+    line-height: 26px;
+    font-size: 17px;
+    // width: 905px;
+  }
 }

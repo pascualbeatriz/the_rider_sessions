@@ -11,6 +11,14 @@
   list-style: none;
 }
 
+@media all and (min-width: 767px) {
+  .videos__container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
+}
+
 .videos__session {
   margin: 40px auto 0;
   padding: 0;
@@ -22,18 +30,32 @@
   margin: 20px auto 10px;
   padding-top: 7px;
   font-weight: 500;
-  font-size: 20px;
+  font-size: 15px;
   max-width: 304px;
   text-align: left;
+}
+
+@media all and (min-width: 767px) {
+  .video__title {
+    font-size: 18px;
+  }
 }
 
 .link__video-documentation {
   text-decoration: none;
   color: rgb(108, 108, 108);
   text-align: left;
-  margin-left: -55px;
+  margin-left: -69px;
+  font-size: 15px;
 }
 
-.biography__section {
-  background-color: red;
+@media all and (min-width: 767px) {
+  .link__video-documentation {
+    font-size: 18px;
+    margin-left: -20px;
+  }
 }
+
+// .biography__section {
+//   background-color: red;
+// }

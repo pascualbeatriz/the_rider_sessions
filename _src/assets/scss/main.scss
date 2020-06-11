@@ -40,15 +40,61 @@
 .main,
 .main__biography,
 .main_form {
-  margin-top: 158px;
+  margin-top: 80%;
   // background-color: green;
   padding: 10px 0 0;
 }
 
+@media all and (max-width: 595px) {
+  .main,
+  .main__biography,
+  .main_form {
+    margin-top: 48%;
+    // background-color: green;
+    padding: 10px 0 0;
+  }
+}
+
+@media all and (min-width: 596px) {
+  .main,
+  .main__biography,
+  .main_form {
+    margin-top: 28%;
+    // background-color: green;
+    padding: 10px 0 0;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .main,
+  .main__biography,
+  .main_form {
+    margin-top: 25%;
+    // background-color: green;
+    padding: 10px 0 0;
+  }
+}
+
+@media all and (min-width: 1200px) {
+  .main,
+  .main__biography,
+  .main_form {
+    margin-top: 24%;
+    // background-color: green;
+    padding: 10px 0 0;
+  }
+}
+
 .main__sessions {
-  margin-top: 108px;
+  margin-top: 158px;
   background-color: #fb8a0022;
   padding: 0;
+}
+
+@media all and (min-width: 768px) {
+  .main__sessions {
+    margin-top: 22%;
+  }
 }
 
 .main__biography {
