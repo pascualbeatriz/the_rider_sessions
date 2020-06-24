@@ -87,7 +87,7 @@
 
 .main__sessions {
   margin-top: 158px;
-  background-color: #fb8a0022;
+  // background-color: #fb8a0022;
   padding: 0;
 }
 
@@ -95,15 +95,18 @@
   .main__sessions {
     margin-top: 22%;
   }
+  .contact__container {
+    padding: 0 40px;
+  }
 }
 
-.main__biography {
-  background-color: pink;
-}
+// .main__biography {
+//   background-color: pink;
+// }
 
-.main_form {
-  background-color: yellow;
-}
+// .main_form {
+//   background-color: yellow;
+// }
 
 // CONTACT FORM
 .contact__title {
@@ -118,12 +121,12 @@
   font-size: 17px;
   text-align: left;
   color: #212121;
-  background-color: red;
+  // background-color: red;
   margin: 20px 0;
 }
 
 .contact__form-container {
-  background-color: blueviolet;
+  // background-color: blueviolet;
   margin: 20px auto;
   padding: 0px 40px 20px;
 }

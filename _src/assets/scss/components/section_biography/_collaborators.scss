@@ -1,6 +1,6 @@
 // COLABORADORES
 .biography__collaborators-container {
-  background-color: burlywood;
+  // background-color: burlywood;
   padding: 30px;
   // display: flex;
   // flex-direction: column;
@@ -15,7 +15,7 @@
 }
 
 .biography__collaborators {
-  background-color: sandybrown;
+  // background-color: sandybrown;
   padding: 10px;
   margin: 30px 0;
 }
@@ -129,8 +129,16 @@
   margin: 25px 20px 20px;
   padding: 0;
   list-style: none;
-  color: #303ba3;
+  // color: #303ba3;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media all and (min-width: 767px) {
+  .biography__collaborators-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr);
+  }
 }
