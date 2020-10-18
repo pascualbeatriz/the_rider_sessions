@@ -1,82 +1,159 @@
 // HEADER
 
 .header {
-  position: fixed;
   width: 100vw;
   z-index: 3;
-  top: 0;
-  left: 0;
   text-align: center;
   text-transform: uppercase;
-  background-color: white;
   font-weight: 500;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  box-shadow: 0 7px 15px 0 #008c4c15;
+}
+
+@media all and(min-width: 500px) {
+  .header {
+    justify-content: center;
+  }
+}
+
+@media all and (min-width: 767px) {
+  .header {
+    // background-color: rgba(48, 59, 163, 0.9);
+    width: 100vw;
+  }
+}
+
+.header-nav {
+  position: fixed;
+  right: -170px;
+  top: 0;
+  width: 170px;
+  height: 40vh;
+  background-color: rgba(48, 59, 163, 0.9);
+  transition: all 500ms linear;
+  color: white;
+}
+
+@media all and (min-width: 767px) {
+  .header-nav {
+    position: static;
+    width: 80vw;
+    height: 8vh;
+    background-color: rgba(48, 59, 163, 0);
+    transition: none;
+  }
+}
+
+.header-nav.active {
+  right: 0;
+}
+
+.link-logo__index {
+  margin-left: -5px;
+  padding-top: 2px;
+  width: 30%;
 }
 
 .logo__the_rider_sessions {
-  width: 40%;
+  width: 45%;
   cursor: pointer;
 }
 
 @media all and (min-width: 600px) {
   .logo__the_rider_sessions {
-    width: 20%;
+    width: 30%;
+  }
+  .link-logo__index {
+    margin-left: -40px;
   }
 }
 
-.header-nav__container {
-  background-color: rgba(48, 59, 163, 0.9);
-  opacity: 0.9;
-  padding: 21px 0 0;
-  height: 14px;
-  display: flex;
-  justify-content: center;
-  // ESTO ES PROVISIONAL, PARA QUE QUEDE EL NAV EN EL CENTRO
-  // width: 38%;
-  // margin: 0 auto;
+@media all and (min-width: 767px) {
+  .link-logo__index {
+    margin-left: 0px;
+  }
+  .logo__the_rider_sessions {
+    width: 40%;
+  }
+}
+
+.toggle-btn {
+  position: absolute;
+  top: 10px;
+  right: 190px;
+  cursor: pointer;
+  color: rgba(48, 59, 163, 1);
+  border: 2px solid rgba(48, 59, 163, 0.9);
+  border-radius: 100%;
+}
+
+@media all and (min-width: 380px) {
+  .toggle-btn {
+    top: 17px;
+    right: 210px;
+  }
+}
+
+.hamburger-menu {
+  display: block;
+  width: 15px;
+  text-align: center;
+  font-size: 17px;
+  padding: 2px 6px 3px;
+}
+
+.hamburger-menu:hover {
+  color: orange;
+}
+
+@media all and (min-width: 767px) {
+  .toggle-btn,
+  .hamburger-menu {
+    display: none;
+  }
 }
 
 @media all and (min-width: 767px) {
   .header-nav__container {
-    background-color: rgba(48, 59, 163, 0.9);
-    opacity: 0.9;
-    padding: 21px 0 0;
-    height: 14px;
-    display: flex;
-    justify-content: center;
-    // ESTO ES PROVISIONAL, PARA QUE QUEDE EL NAV EN EL CENTRO
-    width: 924px;
+    padding: 0 85px;
+    width: 100vw;
     margin: 0 auto;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
 .header-nav-ul {
-  transition: transform ease 0.8s;
-  margin: 0 auto;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  align-items: center;
   font-size: 12px;
 }
 
 @media all and (min-width: 767px) {
   .header-nav-ul {
+    transition: transform ease 0.8s;
+    margin: 0 auto;
+    padding: 0;
+    display: flex;
+    align-items: center;
     font-size: 14px;
   }
 }
 
 .header-nav-li {
-  border-right: solid 1.5px orange;
-  // height: 30px;
-  margin-bottom: 21px;
-  padding: 10px 0; //Mirar esto
-  // background-color: rgba(48, 59, 163, 0.9);
+  list-style: none;
+  color: orange;
+  text-align: center;
+  // border-bottom: 1px solid rgba(100, 100, 100, 0.6);
+  padding: 50px 10px;
 }
 
 @media all and (min-width: 767px) {
   .header-nav-li {
-    margin-bottom: 21px;
-    padding: 9px 0; //Mirar esto
+    // border-right: solid 1.5px orange;
+    margin-bottom: 31px;
+    padding: 25px 0 25px;
   }
 }
 
@@ -94,7 +171,9 @@
 
 @media all and (min-width: 767px) {
   .header-nav-link {
-    padding: 0 90px;
+    padding: 0 50px;
+    color: rgba(48, 59, 163, 0.9);
+    font-weight: 700;
   }
 
   .header-nav-li:first-child .header-nav-link {
