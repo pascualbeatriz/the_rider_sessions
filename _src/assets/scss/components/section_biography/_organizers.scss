@@ -72,7 +72,6 @@
       grid-row: 1/2;
       text-align: right;
     }
-    // VOY POR AQUI
     .biography__organizers-text {
       text-align: justify;
     }
@@ -90,19 +89,20 @@
     }
   }
 }
+// CRISTINA----------------->
 .cristina_organizer {
   .biography__organizers-social-networks-list {
     grid-column: 5/6;
     display: flex;
-    justify-content: flex-end;
+    // justify-content: flex-end;
     transform: translateY(-5px);
-    margin: 0;
+    // margin: 0;
     padding: 13px 13px 10px;
   }
   .biography__organizers-image-container {
     grid-column: 6/7;
     grid-row: 1/2;
-    margin: 25px 20px 0 !important;
+    // margin: 25px 20px 0 !important;
   }
 }
 
@@ -161,11 +161,6 @@
   font-size: 15px;
   color: #212121;
 }
-
-// @media all and (min-width: 767px) {
-//   .biography__organizers-text {
-//   }
-// }
 
 // ul
 .biography__organizers-social-networks-list {
