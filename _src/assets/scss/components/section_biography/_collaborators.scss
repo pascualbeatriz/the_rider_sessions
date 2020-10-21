@@ -1,23 +1,4 @@
 // COLABORADORES
-.biography__collaborators-section {
-  margin-top: 20px;
-}
-
-.biography__collaborators_main-title {
-  border-bottom: 1px solid rgba(48, 59, 163, 1);
-  margin: 20px auto 10px;
-  padding-bottom: 7px;
-  font-weight: 600;
-  font-size: 18px;
-  color: rgba(48, 59, 163, 1);
-}
-
-@media all and (min-width: 767px) {
-  .biography__collaborators_main-title {
-    font-size: 20px;
-  }
-}
-
 .biography__collaborators-container {
   // background-color: burlywood;
   padding: 30px;
@@ -159,8 +140,5 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(auto, 1fr);
-  }
-  .biography__collaborators-section {
-    margin-top: 80px;
   }
 }
